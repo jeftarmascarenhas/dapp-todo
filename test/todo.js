@@ -30,4 +30,12 @@ contract("Todo List Contract", (accounts) => {
 
     assert.equal(getFirstTask.description, taskDescription);
   });
+
+  it("should completed toggle task true", async () => {
+    await this.todoList.completeTaskToggle(1);
+
+    const defaultTaskCompleted = await this.todoList.tasks.call(1);
+
+    assert.equal(defaultTaskCompleted.completed, true);
+  });
 });
