@@ -25,4 +25,11 @@ contract Todo {
         tasks[taskCount] = Task(taskCount, _description, false);
         emit AddTaskCreated(taskCount, _description, false);
     }
+
+    function completeTaskToggle(uint256 _id) public {
+        Task memory _task = tasks[_id];
+        _task.completed = !_task.completed;
+        tasks[_id] = _task;
+        emit CompletedTaskCreated(_id, _task.completed);
+    }
 }
