@@ -20,4 +20,14 @@ contract("Todo List Contract", (accounts) => {
 
     assert.equal(getDefaultTask.description, defaultTask);
   });
+
+  it("should add a new task in todo", async () => {
+    const taskDescription = "First Task";
+
+    await this.todoList.addTask(taskDescription);
+
+    const getFirstTask = await this.todoList.tasks.call(2);
+
+    assert.equal(getFirstTask.description, taskDescription);
+  });
 });
