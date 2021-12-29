@@ -1,0 +1,101 @@
+.app {
+  max-width: 600px;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 0.2rem;
+}
+
+.app > .app-title {
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+
+.app > .app-form {
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-form > .app-input {
+  width: 100%;
+  border: thin solid #ddd;
+  padding: 0.2rem 0.6rem;
+  min-height: 2.5rem;
+  border-radius: 0.2rem;
+}
+.app-form > .app-button {
+  display: block;
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding: 0.2rem 1rem;
+  min-height: 2.5rem;
+  background-color: #444;
+  color: #fff;
+}
+
+.app > .task-loading {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.app > .task-loading > span {
+  display: inline-block;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  background-color: #444;
+  margin-right: 0.6rem;
+}
+
+.app > .task-loading > span:last-child {
+  margin-right: 0;
+}
+
+.app > .task-loading > span:nth-child(1) {
+  animation: point-1 0.5s 0.2s alternate infinite;
+}
+
+.app > .task-loading > span:nth-child(2) {
+  animation: point-2 0.5s 0.6s alternate infinite;
+}
+
+.app > .task-loading > span:nth-child(3) {
+  animation: point-3 0.5s 0.8s alternate infinite;
+}
+
+.alert {
+  padding: 0.6rem;
+  text-align: center;
+}
+
+.alert.alert--warn {
+  background-color: darkorange;
+}
+
+@keyframes point-1 {
+  to {
+    transform: translateY(-10px);
+  }
+  from {
+    transform: translateY(0px);
+  }
+}
+@keyframes point-2 {
+  to {
+    transform: translateY(-10px);
+  }
+  from {
+    transform: translateY(0px);
+  }
+}
+@keyframes point-3 {
+  to {
+    transform: translateY(-10px);
+  }
+  from {
+    transform: translateY(0px);
+  }
+}
