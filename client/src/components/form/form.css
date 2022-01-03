@@ -1,0 +1,29 @@
+.app > .app-form {
+  margin-top: 0.8rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app-form > .app-input {
+  width: 100%;
+  border: thin solid #ddd;
+  padding: 0.2rem 0.6rem;
+  min-height: 2.5rem;
+  outline: none;
+}
+.app-form > .app-button {
+  display: block;
+  font-size: 1.4rem;
+  cursor: pointer;
+  padding: 0.2rem 1rem;
+  min-height: 2.5rem;
+  background-color: #333;
+  color: #fff;
+}
+
+.app-form > .app-button:disabled {
+  background-color: #9a9a9a;
+  cursor: not-allowed;
+}
