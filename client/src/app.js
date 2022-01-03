@@ -45,9 +45,7 @@ function App() {
         {state.loading && <Loading />}
       </div>
       {hasNotBalance && state.currentAccount && (
-        <div className="alert alert--warn">
-          This account doesn't has balance
-        </div>
+        <div className="alert alert--warn">This account has no balance</div>
       )}
     </>
   );
