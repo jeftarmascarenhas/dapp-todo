@@ -1,0 +1,14 @@
+.todo-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-list > .todo-list-task {
+  padding-bottom: 0.6rem;
+  margin-bottom: 1rem;
+  border-bottom: thin solid #f2f2f2;
+}
+
+.todo-list > .todo-list-task:last-child {
+  border-bottom: none;
+}
