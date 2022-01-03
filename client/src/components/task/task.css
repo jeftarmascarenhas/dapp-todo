@@ -1,0 +1,20 @@
+.task {
+  display: flex;
+  align-items: center;
+}
+
+.task > .task__check {
+  margin-right: 0.8rem;
+}
+.task > .task__description {
+  font-size: 1.2rem;
+  font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 400px;
+}
+
+.task > .task--completed {
+  text-decoration: line-through;
+}
